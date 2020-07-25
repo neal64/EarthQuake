@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EarthQuake</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="str_date_time"><b><![CDATA[Date & Time : %1$s]]></b></string>
+    <string name="str_arrow_forward_icon">Arrow Forward Icon</string>
+    <string name="str_magnitude"><b>Magnitude :</b> %1$s</string>
+    <string name="str_set_error">Error Code %1$s</string>
+    <string name="str_depth"><b>Depth : </b>%1$s</string>
+    <string name="str_mark_destination">"Marker in EarthQuake Location"</string>
+</resources>

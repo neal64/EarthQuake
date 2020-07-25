@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/min_margin"
+    android:background="@drawable/border_shadow"
+    android:layout_marginBottom="@dimen/default_margin"
+    android:layout_marginLeft="@dimen/min_margin">
+
+    <TextView
+        android:id="@+id/str_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_date_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/str_dept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/str_date"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/min_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/str_depth"/>
+
+    <TextView
+        android:id="@+id/str_magnitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/str_dept"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/str_magnitude"/>
+
+    <ImageView
+        android:id="@+id/icon_arrow"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:contentDescription="@string/str_arrow_forward_icon"
+        android:src="@drawable/ic_arrow_forward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
